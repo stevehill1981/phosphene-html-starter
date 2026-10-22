@@ -1,6 +1,5 @@
 {
   "name": "My first website",
-  "image": "mcr.microsoft.com/devcontainers/universal:6-noble",
   "hostRequirements": {
     "cpus": 2
   },
