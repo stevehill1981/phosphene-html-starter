@@ -1,0 +1,35 @@
+{
+  "name": "My first website",
+  "image": "mcr.microsoft.com/devcontainers/universal:6-noble",
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "forwardPorts": [
+    8000
+  ],
+  "portsAttributes": {
+    "8000": {
+      "label": "My website preview",
+      "onAutoForward": "notify"
+    }
+  },
+  "postStartCommand": "node .devcontainer/start-preview.mjs",
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "index.html"
+      ]
+    },
+    "vscode": {
+      "settings": {
+        "workbench.startupEditor": "none",
+        "workbench.editor.enablePreview": false,
+        "editor.fontSize": 16,
+        "editor.minimap.enabled": false,
+        "editor.wordWrap": "on",
+        "editor.inlineSuggest.enabled": false,
+        "files.autoSave": "off"
+      }
+    }
+  }
+}
